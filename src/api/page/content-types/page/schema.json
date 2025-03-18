@@ -1,0 +1,130 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "profile": {
+      "type": "string"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "page"
+    },
+    "links": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::link.link",
+      "mappedBy": "page"
+    },
+    "biography": {
+      "type": "text"
+    },
+    "occupation": {
+      "type": "enumeration",
+      "enum": [
+        "bedrijf",
+        "stichting",
+        "non-profit organisatie",
+        "zelfstandig ondernemer",
+        "freelancer",
+        "artiest",
+        "musicus",
+        "schrijver",
+        "beeldend kunstenaar",
+        "docent",
+        "onderzoeker",
+        "student",
+        "stagiair",
+        "technicus",
+        "ingenieur",
+        "medisch professional",
+        "verzorger",
+        "administratief medewerker",
+        "kantoor medewerker",
+        "hobbyist",
+        "vrijwilliger",
+        "gepensioneerde",
+        "werkzoekende",
+        "overig",
+        "geen"
+      ]
+    },
+    "telephone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "address": {
+      "displayName": "address",
+      "type": "component",
+      "repeatable": false,
+      "component": "maps.address"
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "whatsapp": {
+      "type": "string"
+    },
+    "tiktok": {
+      "type": "string"
+    },
+    "linkedin": {
+      "type": "string"
+    },
+    "pinterest": {
+      "type": "string"
+    },
+    "snapchat": {
+      "type": "string"
+    },
+    "youtube": {
+      "type": "string"
+    },
+    "patreon": {
+      "type": "string"
+    },
+    "theme": {
+      "type": "enumeration",
+      "enum": [
+        "zwart",
+        "grijs",
+        "geel",
+        "roze",
+        "bruin",
+        "groen",
+        "afrotheme"
+      ],
+      "default": "zwart"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    }
+  }
+}

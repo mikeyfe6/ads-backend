@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_maps_addresses",
+  "info": {
+    "displayName": "address",
+    "icon": "pinMap",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "location": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "float"
+    },
+    "longitude": {
+      "type": "float"
+    }
+  }
+}

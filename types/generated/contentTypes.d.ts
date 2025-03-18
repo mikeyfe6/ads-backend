@@ -369,6 +369,115 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiLinkLink extends Struct.CollectionTypeSchema {
+  collectionName: 'links';
+  info: {
+    description: '';
+    displayName: 'Link';
+    pluralName: 'links';
+    singularName: 'link';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::link.link'> &
+      Schema.Attribute.Private;
+    page: Schema.Attribute.Relation<'manyToOne', 'api::page.page'>;
+    publishedAt: Schema.Attribute.DateTime;
+    title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    url: Schema.Attribute.String;
+    visible: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+  };
+}
+
+export interface ApiPagePage extends Struct.CollectionTypeSchema {
+  collectionName: 'pages';
+  info: {
+    description: '';
+    displayName: 'Page';
+    pluralName: 'pages';
+    singularName: 'page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    address: Schema.Attribute.Component<'maps.address', false>;
+    avatar: Schema.Attribute.Media<'images' | 'files'>;
+    biography: Schema.Attribute.Text;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    email: Schema.Attribute.Email;
+    facebook: Schema.Attribute.String;
+    instagram: Schema.Attribute.String;
+    linkedin: Schema.Attribute.String;
+    links: Schema.Attribute.Relation<'oneToMany', 'api::link.link'>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::page.page'> &
+      Schema.Attribute.Private;
+    occupation: Schema.Attribute.Enumeration<
+      [
+        'bedrijf',
+        'stichting',
+        'non-profit organisatie',
+        'zelfstandig ondernemer',
+        'freelancer',
+        'artiest',
+        'musicus',
+        'schrijver',
+        'beeldend kunstenaar',
+        'docent',
+        'onderzoeker',
+        'student',
+        'stagiair',
+        'technicus',
+        'ingenieur',
+        'medisch professional',
+        'verzorger',
+        'administratief medewerker',
+        'kantoor medewerker',
+        'hobbyist',
+        'vrijwilliger',
+        'gepensioneerde',
+        'werkzoekende',
+        'overig',
+        'geen',
+      ]
+    >;
+    patreon: Schema.Attribute.String;
+    pinterest: Schema.Attribute.String;
+    profile: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    slug: Schema.Attribute.UID;
+    snapchat: Schema.Attribute.String;
+    telephone: Schema.Attribute.String;
+    theme: Schema.Attribute.Enumeration<
+      ['zwart', 'grijs', 'geel', 'roze', 'bruin', 'groen', 'afrotheme']
+    > &
+      Schema.Attribute.DefaultTo<'zwart'>;
+    tiktok: Schema.Attribute.String;
+    twitter: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    user: Schema.Attribute.Relation<
+      'oneToOne',
+      'plugin::users-permissions.user'
+    >;
+    whatsapp: Schema.Attribute.String;
+    youtube: Schema.Attribute.String;
+  };
+}
+
 export interface PluginContentReleasesRelease
   extends Struct.CollectionTypeSchema {
   collectionName: 'strapi_releases';
@@ -844,6 +953,7 @@ export interface PluginUsersPermissionsUser
       'plugin::users-permissions.user'
     > &
       Schema.Attribute.Private;
+    page: Schema.Attribute.Relation<'oneToOne', 'api::page.page'>;
     password: Schema.Attribute.Password &
       Schema.Attribute.Private &
       Schema.Attribute.SetMinMaxLength<{
@@ -878,6 +988,8 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
+      'api::link.link': ApiLinkLink;
+      'api::page.page': ApiPagePage;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;
