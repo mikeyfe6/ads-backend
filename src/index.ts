@@ -14,6 +14,7 @@ export default {
                     await strapi.service("api::page.page").create({
                         data: {
                             name: result.username,
+                            slug: result.username,
                             user: result.id,
                         },
                     });
