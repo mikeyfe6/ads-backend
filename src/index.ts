@@ -13,7 +13,7 @@ export default {
                 try {
                     await strapi.service("api::page.page").create({
                         data: {
-                            name: result.username,
+                            profile: result.username,
                             slug: result.username,
                             user: result.id,
                         },
