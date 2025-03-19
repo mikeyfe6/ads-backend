@@ -1,4 +1,13 @@
 export default ({ env }) => ({
+    // ... USERS-PERMISSIONS
+    "users-permissions": {
+        config: {
+            jwt: {
+                expiresIn: "7d",
+                secret: env("JWT_SECRET"),
+            },
+        },
+    },
     // ... SENDGRID
     email: {
         config: {
