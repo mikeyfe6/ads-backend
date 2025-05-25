@@ -1,61 +1,45 @@
-# 🚀 Getting started with Strapi
+<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
+<p align="center">
+  <a href="https://afrodiasphere.com/" rel="noopener noreferrer"
+              target="_blank">
+    <img alt="Afrodiasphere Logo" src="https://afrodiasphere.com/afrodiasphere-logo.png" width="250" />
+  </a>
+</p>
 
-### `develop`
+<br>
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-develop)
+# Afrodiasphere (BACK-end)
 
-```
-npm run develop
-# or
-yarn develop
-```
+<br>
 
-### `start`
+Afrodiasphere is een sociaal netwerk webapplicatie, opgericht door [Michael Fransman](https://www.linkedin.com/in/michaelfransman/).
 
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-start)
+Die ervoor dient bedrijven, particulieren en hobbyisten meer netwerkmogelijkheden te bieden, door middel van jouw dashboard waarin je jouw belangrijke hyperlinks en andere relevante informatie als gebruiker invoert!
 
-```
-npm run start
-# or
-yarn start
-```
+-   _Meer weten? Bekijk de webapp / check the webapp: [Afrodiasphere](https://afrodiasphere.com)_
 
-### `build`
-
-Build your admin panel. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-build)
-
-```
-npm run build
-# or
-yarn build
-```
-
-## ⚙️ Deployment
-
-Strapi gives you many possible deployment options for your project including [Strapi Cloud](https://cloud.strapi.io). Browse the [deployment section of the documentation](https://docs.strapi.io/dev-docs/deployment) to find the best solution for your use case.
-
-```
-yarn strapi deploy
-```
-
-## 📚 Learn more
-
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://strapi.io/blog) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
-
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
-
-## ✨ Community
-
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
+<br>
 
 ---
 
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+<br>
+
+**Deze webapp is gebouwd met GatsbyJS, ReactJS, Strapi, GraphQl, Heroku & Netlify.**
+
+Powered by [Menefex](https://menefex.nl) ✨
+
+<br>
+
+## Licence ✒️
+
+0BSD, all rights reserved, Afrodiasphere 2022 ©
+
+<br>
+
+---
+
+👨🏾‍💻 <ins>...this project</ins> <br> [![wakatime](https://wakatime.com/badge/user/172a37f5-1ff4-4cf8-9d08-5ccbe681726b/project/ca095d5a-62d4-43cd-bf89-843589140a47.svg)](https://wakatime.com/badge/user/172a37f5-1ff4-4cf8-9d08-5ccbe681726b/project/ca095d5a-62d4-43cd-bf89-843589140a47) <br>
+👨🏾‍💻 <ins>...all projects</ins> <br> [![wakatime](https://wakatime.com/badge/user/172a37f5-1ff4-4cf8-9d08-5ccbe681726b.svg)](https://wakatime.com/@172a37f5-1ff4-4cf8-9d08-5ccbe681726b)
+
+<!-- AUTO-GENERATED-CONTENT:END -->
