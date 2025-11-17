@@ -17,12 +17,12 @@
     "reinstall": "rm -rf node_modules package-lock.json yarn.lock && yarn"
   },
   "dependencies": {
-    "@strapi/plugin-cloud": "5.25.0",
-    "@strapi/plugin-documentation": "^5.25.0",
-    "@strapi/plugin-users-permissions": "5.25.0",
-    "@strapi/provider-email-sendgrid": "^5.25.0",
-    "@strapi/provider-upload-cloudinary": "^5.25.0",
-    "@strapi/strapi": "5.25.0",
+    "@strapi/plugin-cloud": "5.31.0",
+    "@strapi/plugin-documentation": "^5.31.0",
+    "@strapi/plugin-users-permissions": "5.31.0",
+    "@strapi/provider-email-sendgrid": "^5.31.0",
+    "@strapi/provider-upload-cloudinary": "^5.31.0",
+    "@strapi/strapi": "5.31.0",
     "better-sqlite3": "12.4.1",
     "pg": "^8.16.3",
     "react": "18",
