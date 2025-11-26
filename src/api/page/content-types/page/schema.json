@@ -10,6 +10,7 @@
   "options": {
     "draftAndPublish": true
   },
+  "pluginOptions": {},
   "attributes": {
     "profile": {
       "type": "string"
@@ -66,10 +67,9 @@
       "type": "email"
     },
     "address": {
-      "displayName": "address",
       "type": "component",
-      "repeatable": false,
-      "component": "maps.address"
+      "component": "maps.address",
+      "repeatable": false
     },
     "facebook": {
       "type": "string"
@@ -103,6 +103,7 @@
     },
     "theme": {
       "type": "enumeration",
+      "default": "afrotheme",
       "enum": [
         "zwart",
         "grijs",
@@ -110,9 +111,12 @@
         "roze",
         "bruin",
         "groen",
-        "afrotheme"
-      ],
-      "default": "zwart"
+        "afrotheme",
+        "oranje",
+        "rood",
+        "blauw",
+        "paars"
+      ]
     },
     "slug": {
       "type": "uid"

@@ -522,9 +522,21 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
     snapchat: Schema.Attribute.String;
     telephone: Schema.Attribute.String;
     theme: Schema.Attribute.Enumeration<
-      ['zwart', 'grijs', 'geel', 'roze', 'bruin', 'groen', 'afrotheme']
+      [
+        'zwart',
+        'grijs',
+        'geel',
+        'roze',
+        'bruin',
+        'groen',
+        'afrotheme',
+        'oranje',
+        'rood',
+        'blauw',
+        'paars',
+      ]
     > &
-      Schema.Attribute.DefaultTo<'zwart'>;
+      Schema.Attribute.DefaultTo<'afrotheme'>;
     tiktok: Schema.Attribute.String;
     twitter: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
