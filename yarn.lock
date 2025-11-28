@@ -4144,7 +4144,7 @@ ccount@^2.0.0:
   resolved "https://registry.yarnpkg.com/ccount/-/ccount-2.0.1.tgz#17a3bf82302e0870d6da43a01311a8bc02a3ecf5"
   integrity sha512-eyrF0jiFpY+3drT6383f1qhkbGsLSifNAjA61IUjZjmLCWjItY6LB9ft9YhoDgwfmclB2zhu51Lc7+95b8NRAg==
 
-ce-la-react@^0.3.0:
+ce-la-react@^0.3.2:
   version "0.3.2"
   resolved "https://registry.yarnpkg.com/ce-la-react/-/ce-la-react-0.3.2.tgz#66c1454e024c3b9f65ebac05724d0f50756ff057"
   integrity sha512-QJ6k4lOD/btI08xG8jBPxRCGXvCnusGGkTsiXk0u3NqUu/W+BXRnFD4PYjwtqh8AWmGa5LDbGk0fLQsqr0nSMA==
@@ -5108,9 +5108,9 @@ ee-first@1.1.1:
   integrity sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==
 
 electron-to-chromium@^1.5.249:
-  version "1.5.260"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.260.tgz#73f555d3e9b9fd16ff48fc406bbad84efa9b86c7"
-  integrity sha512-ov8rBoOBhVawpzdre+Cmz4FB+y66Eqrk6Gwqd8NGxuhv99GQ8XqMAr351KEkOt7gukXWDg6gJWEMKgL2RLMPtA==
+  version "1.5.262"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.262.tgz#c31eed591c6628908451c9ca0f0758ed514aa003"
+  integrity sha512-NlAsMteRHek05jRUxUR0a5jpjYq9ykk6+kO0yRaMi5moe7u0fVIOeQ3Y30A8dIiWFBNUoQGi1ljb1i5VtS9WQQ==
 
 elliptic@^6.5.4, elliptic@^6.6.1:
   version "6.6.1"
@@ -7667,11 +7667,11 @@ mdurl@^1.0.1:
   integrity sha512-/sKlQJCBYVY9Ers9hqzKou4H6V5UWc/M59TH2dvkt+84itfnq7uFOMLpOiOS4ujvHP4etln18fmIxA5R5fll0g==
 
 media-chrome@^4.1.0:
-  version "4.16.0"
-  resolved "https://registry.yarnpkg.com/media-chrome/-/media-chrome-4.16.0.tgz#358fa13ce037f62817ec20025260f66410144e91"
-  integrity sha512-c5xpTYcYo9nYsC/G/C1PyOcPXEL6iIaSR9MH3GncVuj4S90aHqvGbsyUWFDPPBKx5sCwWLxDnbszE/24eMT54g==
+  version "4.16.1"
+  resolved "https://registry.yarnpkg.com/media-chrome/-/media-chrome-4.16.1.tgz#0ebaba9ac678329723cfcc5235db19f6a83a1a1a"
+  integrity sha512-qtFlsy0lNDVCyVo//ZCAfRPKwgehfOYp6rThZzDUuZ5ypv41yqUfAxK+P9TOs+XSVWXATPTT2WRV0fbW0BH4vQ==
   dependencies:
-    ce-la-react "^0.3.0"
+    ce-la-react "^0.3.2"
 
 media-chrome@~4.2.1:
   version "4.2.3"
@@ -8880,9 +8880,9 @@ postcss-modules-values@^4.0.0:
     icss-utils "^5.0.0"
 
 postcss-selector-parser@^7.0.0:
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/postcss-selector-parser/-/postcss-selector-parser-7.1.0.tgz#4d6af97eba65d73bc4d84bcb343e865d7dd16262"
-  integrity sha512-8sLjZwK0R+JlxlYcTuVnyT2v+htpdrjDOKuMcOVdYjt52Lh8hWRYpxBPoKx/Zg+bcjc3wx6fmQevMmUztS/ccA==
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/postcss-selector-parser/-/postcss-selector-parser-7.1.1.tgz#e75d2e0d843f620e5df69076166f4e16f891cb9f"
+  integrity sha512-orRsuYpJVw8LdAwqqLykBj9ecS5/cRHlI5+nvTo8LcCKmzDmqVORXtOIYEEQuL9D4BxtA1lm5isAqzQZCoQ6Eg==
   dependencies:
     cssesc "^3.0.0"
     util-deprecate "^1.0.2"
