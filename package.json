@@ -17,27 +17,28 @@
     "reinstall": "rm -rf node_modules package-lock.json yarn.lock && yarn"
   },
   "dependencies": {
-    "@strapi/plugin-cloud": "5.38.0",
-    "@strapi/plugin-documentation": "^5.38.0",
-    "@strapi/plugin-users-permissions": "5.38.0",
-    "@strapi/provider-email-sendgrid": "^5.38.0",
-    "@strapi/provider-upload-cloudinary": "^5.38.0",
-    "@strapi/strapi": "5.38.0",
-    "better-sqlite3": "12.6.2",
-    "pg": "^8.20.0",
+    "@strapi/plugin-cloud": "5.52.2",
+    "@strapi/plugin-documentation": "^5.52.2",
+    "@strapi/plugin-users-permissions": "5.52.2",
+    "@strapi/provider-email-sendgrid": "^5.52.2",
+    "@strapi/provider-upload-cloudinary": "^5.52.2",
+    "@strapi/strapi": "5.52.2",
+    "better-sqlite3": "13.0.3",
+    "pg": "^8.23.0",
     "react": "18",
     "react-dom": "18",
     "react-router-dom": "6",
-    "styled-components": "^6.3.11"
+    "styled-components": "^6.5.3"
   },
   "devDependencies": {
-    "@types/node": "^25",
+    "@types/node": "^26",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "typescript": "^5"
+    "typescript": "^7"
   },
   "engines": {
-    "node": ">=20.0.0 <=24.x.x",
+    "node": ">=20.0.0 <=26.x.x",
+    "npm": ">=6.0.0",
     "yarn": "1.x"
   },
   "strapi": {
